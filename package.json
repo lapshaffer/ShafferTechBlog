@@ -1,0 +1,31 @@
+{
+  "name": "shaffertechblog",
+  "version": "1.0.0",
+  "description": "A functional mock-up of a tech blog that utilizes SQL, Sequelize and Handlebars to allow users to sign up, sign in, make, edit and comment on posts.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lapshaffer/ShafferTechBlog.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lapshaffer/ShafferTechBlog/issues"
+  },
+  "homepage": "https://github.com/lapshaffer/ShafferTechBlog#readme",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "connect-session-sequelize": "^7.1.1",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "express-handlebars": "^5.3.3",
+    "express-session": "^1.17.2",
+    "mysql2": "^2.3.0",
+    "sequelize": "^6.6.5"
+  }
+}
