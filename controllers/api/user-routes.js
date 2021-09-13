@@ -1,7 +1,8 @@
 const router = require('express').Router();
 const { User } = require('../../models');
+const sequelize = require('../../config/connection');
 
-// CREATE new user
+// Sign in
 router.post('/', async (req, res) => {
   try {
     const dbUserData = await User.create({
@@ -21,7 +22,7 @@ router.post('/', async (req, res) => {
   }
 });
 
-// Login
+// Log in
 router.post('/login', async (req, res) => {
   try {
     const dbUserData = await User.findOne({
@@ -59,7 +60,7 @@ router.post('/login', async (req, res) => {
   }
 });
 
-// Logout
+// Log out
 router.post('/logout', (req, res) => {
   if (req.session.loggedIn) {
     req.session.destroy(() => {
