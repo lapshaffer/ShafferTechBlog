@@ -1,1 +1,22 @@
 <!-- Add input for comments while viewing individual post -->
+
+{{> post-info post}}
+
+{{#if loggedIn}}
+<div class="card">
+    <h3 class="cardHeader"></h3>
+    <form class="cardContent commentForm" id="commentForm">
+
+        <label class="form-label">Comment</label>
+        <input id="comment" name="commentContent" class="form-input" />
+
+        <button type="submit" class="btn">Submit</button>
+    </form>
+</div>
+{{/if}}
+
+{{> comments post.comments}}
+
+{{#if loggedIn}}
+<script src="/js/comment.js"></script>
+{{/if}}
