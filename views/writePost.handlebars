@@ -1,1 +1,17 @@
 <!-- From the dashboard, write a post to have displayed on the homepage -->
+
+<div class="card">
+    <h3 class="card-header">Write a New Post</h3>
+    <form class="card-body newPostForm" id="newPostForm">
+        <label for="postTitle" class="form-label">Title</label>
+        <input type="text" id="postTitle" name="post-title" class="form-input" />
+
+
+        <label class="form-label" for="content">Content</label>
+        <input id="content" name="content" class="form-input" />
+
+        <button type="submit" class="btn">Create</button>
+    </form>
+</div>
+
+<script src="/js/writePosts.js"></script>
