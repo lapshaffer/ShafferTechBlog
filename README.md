@@ -47,6 +47,12 @@ WHEN I am idle on the site for more than a set time
 THEN I am able to view comments but I am prompted to log in again before I can add, update, or delete comments
 ```
 
+## Deployment
+```md
+At this time, the functionality of logging in, logging out and signing up are functional. In the future, I'll need to go back in and repair the user dashboard functionality (viewing one's own posts, editing, posting and deleting from the dashboard)
+Heroku Application: https://boiling-spire-23775.herokuapp.com/
+```
+
 ## Resources and Questions
 
 ```md
